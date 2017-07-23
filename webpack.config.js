@@ -13,11 +13,21 @@ module.exports = {
         test: /\.jsx?$/,
         loader: 'babel',
         exclude: /node_modules/
+      }, {
+        test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/,
+        loader: 'url-loader?limit=10000'
+      }, {
+        test: /\.s?css$/, // http://browniefed.com/blog/2014/12/24/webpack-and-compass/
+        loaders: [
+          'style-loader',
+          'raw-loader',
+          `sass-loader?`
+        ]
       }
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx', '.png']
   },
   externals: [
     {

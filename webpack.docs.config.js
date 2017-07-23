@@ -25,7 +25,8 @@ module.exports = {
     loaders: [
       { test: /\.js/, loader: 'babel', exclude: /node_modules/ },
       { test: /\.scss/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader!sass-loader') },
-      { test: /\.css/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader') }
+      { test: /\.css/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader') },
+      { test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/, loader: 'url-loader?limit=10000' }
     ]
   },
   node: { Buffer: false },

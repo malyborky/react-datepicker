@@ -75,3 +75,7 @@ export function safeDateFormat (date, { dateFormat, locale }) {
     .locale(locale || moment.locale())
     .format(Array.isArray(dateFormat) ? dateFormat[0] : dateFormat) || ''
 }
+
+export function capitalizeFirstLetter (string) {
+  return string.charAt(0).toUpperCase() + string.slice(1)
+}

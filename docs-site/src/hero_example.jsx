@@ -21,6 +21,7 @@ export default class HeroExample extends React.Component {
         autoFocus
         inline
         selected={this.state.startDate}
+        locale="cs"
         onChange={this.handleChange} />
   }
 }

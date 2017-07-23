@@ -339,7 +339,7 @@
   .react-datepicker__portal .react-datepicker__navigation {
     border: 0.81rem solid transparent; }
   .react-datepicker__portal .react-datepicker__navigation--previous {
-    border-right-color: #ccc; }
+    border-right-color: #000; }
     .react-datepicker__portal .react-datepicker__navigation--previous:hover {
       border-right-color: #b3b3b3; }
   .react-datepicker__portal .react-datepicker__navigation--next {
