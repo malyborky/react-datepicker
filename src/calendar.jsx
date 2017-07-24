@@ -223,7 +223,6 @@ export default class Calendar extends React.Component {
     return (
       <div className={classes.join(' ')}>
         <a className="pickButton" onClick={() => this.setState({displayPage: DISPLAY_PAGES.months})}>{capitalizeFirstLetter(date.format('MMMM'))}</a>
-        &nbsp;
         <a className="pickButton" onClick={() => this.setState({displayPage: DISPLAY_PAGES.years})}>{date.format('YYYY')}</a>
       </div>
     )

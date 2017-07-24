@@ -26,7 +26,10 @@ module.exports = {
       { test: /\.js/, loader: 'babel', exclude: /node_modules/ },
       { test: /\.scss/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader!sass-loader') },
       { test: /\.css/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader') },
-      { test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/, loader: 'url-loader?limit=10000' }
+      { test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/, loader: 'url-loader?limit=10000' }, {
+        test: /\.(eot|ttf|wav|mp3)$/,
+        loader: 'file-loader'
+      }
     ]
   },
   node: { Buffer: false },

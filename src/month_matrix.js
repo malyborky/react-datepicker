@@ -29,7 +29,7 @@ export default class MonthMatrix extends React.Component {
     let groupedMonths = createGroupedArray(monthNames, 3)
 
     return (
-      <div>
+      <div className="popup">
         <div className="react-datepicker__current-month">
           <span>{this.props.title}</span>
           <a onClick={this.props.onClose} className="react-datepicker__navigation react-datepicker__navigation--close"/>
